@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <TextView
+      android:id="@+id/txt1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="pc"
+      android:background="#F44336"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:textColor="@color/white"
+      />
+
+
+    <Button
+        android:id="@+id/btndesktop"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:text="Desktop"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="bottom|center"
+        android:textAllCaps="false"
+
+        app:backgroundTint="@null"
+        android:background="@drawable/desktop"
+        android:layout_marginVertical="60px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt1"
+        />
+
+    <Button
+        android:id="@+id/btnlabtop"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:text="Laptop"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+
+        app:backgroundTint="@null"
+        android:background="@drawable/laptop"
+        android:gravity="center|bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btndesktop"
+        />
+
+</RelativeLayout>
+</ScrollView>

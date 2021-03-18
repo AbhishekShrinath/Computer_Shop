@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#e1e1e1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_total"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/ttltxt"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@color/teal_700"
+            android:layout_width="match_parent"
+            android:text="Total : ₹"
+            android:textSize="20dp"
+            >
+        </com.romainpiel.shimmer.ShimmerTextView>
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/tv_total"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@color/teal_700"
+            android:layout_width="match_parent"
+            android:text="0 Rs"
+            android:textSize="20dp">
+        </com.romainpiel.shimmer.ShimmerTextView>
+    </LinearLayout>
+<TextView
+    android:id="@+id/msg1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:textColor="@color/black"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:textAlignment="center"
+    android:layout_centerVertical="true"
+    android:text="Congratulation your final order has been  place Successfully ,Soon It will be verified."
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:typeface="serif"
+    android:visibility="gone"
+    />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty_order_cart"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="visible"
+        app:lottie_rawRes="@raw/emptycart"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_above="@+id/btn_placeorder"
+        android:layout_below="@+id/layout_total"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/btn_placeorder"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_btn_blue"
+        android:textColor="@android:color/white"
+        >
+    </Button>
+
+</RelativeLayout>

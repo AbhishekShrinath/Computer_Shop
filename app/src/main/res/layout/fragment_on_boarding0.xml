@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F98888"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img2"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fast"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Delivery"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        android:textSize="40dp"
+        app:layout_constraintVertical_bias=".55"
+        app:layout_constraintHorizontal_bias=".15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="We Deliver Your Product \nto Your Home Safe And\nWith proper packageing."
+        android:textStyle="bold"
+        android:textColor="#F22B2B"
+        android:textSize="25dp"
+        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintHorizontal_bias=".32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

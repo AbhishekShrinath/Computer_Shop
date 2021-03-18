@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sigin_Signup">
+
+    <ImageView
+        android:id="@+id/demoimg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/redblueblur"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="1500px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curve_bg"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:background="@drawable/curve_bg"
+            android:layout_height="wrap_content"
+            />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:background="@drawable/curve_bg"
+            android:layout_width="match_parent"
+            android:layout_height="1300px"
+            android:layout_below="@id/tablayout"
+            android:layout_centerInParent="true"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491437354188",
+    "project_id": "computer-shop-26dfd",
+    "storage_bucket": "computer-shop-26dfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491437354188:android:90f8252aa729b48a8b6669",
+        "android_client_info": {
+          "package_name": "com.abhishekshrinath.computershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491437354188-iab8juvb2fhadl8is39662s3vft6ssjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89HESBLOg4LLfGte6BAAvIno1ibmrx0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491437354188-iab8juvb2fhadl8is39662s3vft6ssjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

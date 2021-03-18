@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:padding="10dp"
+    android:id="@+id/container"
+    >
+
+<ImageView
+    android:id="@+id/thumbnail"
+    android:layout_width="150dp"
+    android:layout_height="120dp"
+    android:background="@drawable/loading_shape"
+    />
+
+    <TextView
+        android:id="@+id/producttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lenovo demo"
+        android:layout_marginHorizontal="10px"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+
+        android:layout_toRightOf="@id/thumbnail"
+        />
+
+    <TextView
+        android:id="@+id/productrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:background="@drawable/blue_curve_shape"
+        android:layout_marginHorizontal="10px"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        android:layout_below="@id/producttitle"
+        android:layout_toRightOf="@id/thumbnail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginStart="5dp"
+
+        android:textColor="#CDDC39"
+        android:layout_below="@id/productrating"
+        android:layout_toRightOf="@+id/productprice"
+        />
+    <TextView
+        android:id="@+id/productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345"
+        android:layout_marginHorizontal="10px"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+
+        android:layout_below="@id/productrating"
+        android:layout_toRightOf="@id/thumbnail"
+        />
+    <Button
+        android:id="@+id/row_btn_lst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/cystom_btn_green"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+
+        android:layout_below="@id/productprice"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

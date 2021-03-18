@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.romainpiel.shimmer.ShimmerTextView
+    android:id="@+id/txtmsg"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintVertical_bias="0.05"
+    android:text="Please Write your Shipment Details"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/purple_500"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    />
+        <EditText
+            android:id="@+id/ship_name"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".2"
+            app:layout_constraintHorizontal_bias=".5"
+            android:hint="Name"
+            android:textSize="25sp"
+            android:background="@drawable/edit_text_shape"
+
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:id="@+id/Ship_Phone_Number_id"
+            android:background="@drawable/edit_text_shape"
+            android:hint="PhoneNumber"
+
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ship_name"
+            app:layout_constraintWidth_percent=".8"
+            />
+
+        <EditText
+            android:id="@+id/shipment_address_id"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Your Home Address"
+            android:textSize="25dp"
+
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ship_Phone_Number_id"
+            app:layout_constraintWidth_percent=".8"
+            />
+        <EditText
+            android:id="@+id/Shipment_City_id"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Your City"
+            android:textSize="25sp"
+
+
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shipment_address_id"
+            app:layout_constraintWidth_percent=".8"
+            />
+
+
+        <Button
+
+            android:id="@+id/Confirm_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".7"
+            android:text="Confirm"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_btn_blue"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Shipment_City_id"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

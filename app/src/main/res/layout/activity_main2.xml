@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1EAEA"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1EAEA"
+        tools:context=".MainActivity">
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:background="@drawable/logo_comp"
+            />
+
+        <Button
+            android:id="@+id/cartagoires_main2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textColor="@color/black"
+            android:text="category"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textAllCaps="false"
+
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/ic_product"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/head_image"
+            android:layout_alignParentStart="true"
+            />
+        <Button
+            android:id="@+id/cart_main2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textColor="@color/black"
+            android:text="Cart"
+            android:textAllCaps="false"
+
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/ic_cart"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/head_image"
+            android:layout_alignParentEnd="true"
+
+            />
+        <Button
+            android:id="@+id/About_main2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/about"
+            android:textColor="@color/black"
+            android:text="About"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            android:textSize="19sp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/cartagoires_main2"
+            />
+
+        <Button
+            android:id="@+id/Feedback_main2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/ic_feedback"
+            android:textColor="@color/black"
+            android:onClick="feedback"
+            android:text="FeedBack"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            android:textSize="19sp"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_below="@+id/cart_main2"
+            />
+
+        <Button
+            android:id="@+id/Logout_main2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textColor="@color/black"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textAllCaps="false"
+
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/ic_logout"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/About_main2"
+            />
+    </RelativeLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

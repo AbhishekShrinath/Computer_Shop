@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C7BBDE"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:background="#F44336"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <Button
+
+            android:id="@+id/btnstorage1"
+            android:layout_marginVertical="40px"
+            android:layout_marginHorizontal="30px"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:text="storage devices"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            app:backgroundTint="@null"
+            android:gravity="bottom|center_horizontal"
+            android:textAlignment="gravity"
+            android:background="@drawable/storage"
+            android:layout_below="@id/txt1"
+            />
+        <Button
+            android:id="@+id/btndisplay1"
+            android:layout_marginVertical="40px"
+            android:layout_marginHorizontal="10px"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:text="Display"
+            android:textAllCaps="false"
+
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            app:backgroundTint="@null"
+            android:layout_toRightOf="@id/btnstorage1"
+            android:gravity="bottom|center_horizontal"
+            android:textAlignment="gravity"
+            android:background="@drawable/display"
+            android:layout_below="@+id/txt1"
+            />
+
+        <Button
+            android:id="@+id/btnpc1"
+            android:layout_marginVertical="40px"
+            android:layout_marginHorizontal="30px"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:text="Pc"
+            android:textAllCaps="false"
+
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="#FF5722"
+            app:backgroundTint="@null"
+            android:gravity="bottom|center_horizontal"
+            android:textAlignment="gravity"
+            android:background="@drawable/pc"
+            android:layout_below="@id/btnstorage1"
+            />
+        <Button
+            android:id="@+id/btnsoftware1"
+            android:layout_marginVertical="40px"
+            android:layout_marginHorizontal="10px"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:text="Software"
+            android:textAllCaps="false"
+
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            app:backgroundTint="@null"
+            android:layout_toRightOf="@id/btnstorage1"
+            android:gravity="bottom"
+            android:layout_below="@id/btndisplay1"
+            android:background="@drawable/software"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shopingcartbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btnsoftware1"
+            />
+
+    </RelativeLayout>
+</ScrollView>
+
